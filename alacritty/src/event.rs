@@ -216,7 +216,7 @@ impl<'a, N: Notify + 'a, T: EventListener> input::ActionContext<T> for ActionCon
             let point = self.mouse.point(&self.size_info(), display_offset);
             self.update_selection(point, self.mouse.cell_side);
         }
-        self.copy_selection(ClipboardType::Selection);
+        //self.copy_selection(ClipboardType::Selection);
 
         *self.dirty = true;
     }
